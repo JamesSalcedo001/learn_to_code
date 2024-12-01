@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: learn_to_code_api_production
-  username: learn_to_code_api
-  password: <%= ENV["LEARN_TO_CODE_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
